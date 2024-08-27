@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="text_cliente" type="id" />
+    <item name="listview_cliente" type="id" />
+    <item name="text_localizacao" type="id" />
+    <item name="listview_localizacao" type="id" />
+    <item name="text_modulo" type="id" />
+    <item name="listview_modulo" type="id" />
+    <item name="checkbox_landscape" type="id" />
+    <item name="checkbox_portrait" type="id" />
+</resources>

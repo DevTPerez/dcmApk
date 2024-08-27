@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olá usuario, bem-vindo ao DCM apk 2.0."
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/wait_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Por favor, aguarde enquanto carregamos as informações do sistema."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/settings_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/configbutton" />
+
+
+    <!-- <Button
+         android:id="@+id/video_button"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_below="@id/welcome_text"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="126dp"
+         android:layout_marginTop="100dp"
+         android:text="videos" />
+     <Button
+         android:id="@+id/settings_button"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_below="@id/welcome_text"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="360dp"
+         android:layout_marginTop="100dp"
+         android:text="Configurações" />
+
+     <Button
+         android:id="@+id/waiting_button"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_below="@id/welcome_text"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="604dp"
+         android:layout_marginTop="100dp"
+         android:text="espera" />
+
+     <Button
+         android:id="@+id/delete_button"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_below="@id/welcome_text"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="854dp"
+         android:layout_marginTop="102dp"
+         android:text="deletar" />
+
+     <Button
+         android:id="@+id/compare_button"
+         android:layout_width="200dp"
+         android:layout_height="50dp"
+         android:layout_below="@id/welcome_text"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="854dp"
+         android:layout_marginTop="200dp"
+         android:text="comparar" />
+     -->
+
+
+
+ </RelativeLayout>

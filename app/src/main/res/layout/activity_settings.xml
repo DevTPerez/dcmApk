@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363636"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Conteúdo da Página de Configuração -->
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:layout_margin="10dp">
+
+                <!-- Seção de Visualização de Tela -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:text="Por favor, siga as orientações para realizar a configuração"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:text="Por favor, selecione o tipo de exibição de vídeo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="12dp"
+                    android:text="Orientação do Ecrã"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_landscape"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"
+                    android:text="Horizontal"
+                    android:layout_marginStart="15dp"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    app:buttonTint="@color/branco" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_portrait"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp"
+                    android:text="Vertical"
+                    android:layout_marginStart="15dp"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    app:buttonTint="@color/branco" />
+
+                <!-- Espaçamento entre seções -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginVertical="16dp"
+                    android:layout_marginHorizontal="30dp" />
+
+                <!-- Seção de Configurações de Cliente -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="15dp"
+                    android:text="Por favor, selecione qual o Cliente e pressione OK para liberar as configurações de Localização e Módulo."
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="12dp"
+                    android:text="Configurações de Cliente"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp">
+
+                    <ListView
+                        android:id="@+id/listview_cliente"
+                        android:layout_width="500dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="texto variavel" />
+
+                    <Button
+                        android:id="@+id/btn_select_client"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/listview_cliente"
+                        android:layout_marginStart="10dp"
+                        android:text="OK" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="12dp"
+                    android:text="Configurações de Localização"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <ListView
+                    android:id="@+id/listview_localizacao"
+                    android:layout_width="500dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="12dp"
+                    android:text="Configurações de Módulo"
+                    android:layout_marginStart="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp">
+
+                    <ListView
+                        android:id="@+id/listview_modulo"
+                        android:layout_width="500dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:id="@+id/btn_save_selection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/listview_modulo"
+                        android:layout_marginStart="10dp"
+                        android:text="OK" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginVertical="16dp"
+                    android:layout_marginHorizontal="30dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/dcmlogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/dcmlogo" />
+
+        <ImageView
+            android:id="@+id/plmlogo"
+            android:layout_width="231dp"
+            android:layout_height="121dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/plmlogo" />
+    </RelativeLayout>
+
+</RelativeLayout>
